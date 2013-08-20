@@ -6,4 +6,8 @@ socket.on('connect', function() {
   // setInterval(function() {
     socket.emit('test', { 'foo': 'bar', 'test': 1 });
   // }, 1000);
+
+  socket.on('welcome', function(data) {
+    console.log(data);
+  });
 });

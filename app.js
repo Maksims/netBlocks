@@ -1,4 +1,4 @@
-var Net = require('./lib/net').Net;
+var Socket = require('./lib/socket').Socket;
 
 var express = require('express');
 var app = express();
@@ -20,19 +20,19 @@ app.configure(function() {
   app.use(express.static(__dirname + '/public'));
 });
 
-var io = new Net(server, sessions);
+var io = new Socket(server, sessions);
 
 
 io.on('new', function(socket) {
-  socket.on('test', function() {
 
+  socket.emit('welcome', {
+    user: socket.session.user.data()
   });
 
-  socket.on('disconnect', function() {
-
-  });
 });
 
-
-
 server.listen(80);
+
+
+// var meta = require('./lib/extra/meta');
+// console.log(meta.get(require('./lib/user').User));
