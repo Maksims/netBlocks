@@ -22,7 +22,6 @@ app.configure(function() {
 
 var io = new Socket(server, sessions);
 
-
 io.on('new', function(socket) {
 
   socket.emit('welcome', {
