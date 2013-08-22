@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>netBlocks</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/darkstrap.min.css">
+  <link rel="stylesheet" href="/css/client.css">
+</head>
+<body>
+  <section id='lobby' class='well'>
+    <div class='btn btn-warning' data-state='join'>JOIN</div>
+    <div class="progress progress-striped active">
+      <div class="bar" style="width: 0%"></div>
+      <div class='number'></div>
+    </div>
+    <div class='ready'>Lobby is full (<span class='number'></span>), prepare for a game!</div>
+  </section>
+
+  <script type='text/javascript' src='/socket.io/socket.io.js'></script>
+  <script type='text/javascript' src="/js/jquery-2.0.3.min.js"></script>
+  <script type='text/javascript' src='/js/client.js'></script>
+</body>
+</html>

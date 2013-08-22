@@ -1,0 +1,5 @@
+body{background:#2f2f2f;text-align:center;padding:8px}
+#lobby{width:240px;margin:0 auto;text-align:left;-webkit-transition:height 200ms;-moz-transition:height 200ms;transition:height 200ms}#lobby>.btn{display:block;font-size:14px;font-weight:bold;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:-moz-none;-ms-user-select:none;user-select:none}
+#lobby>.leave{display:none;margin-bottom:8px}
+#lobby>.progress{display:none;margin:8px 0 0}#lobby>.progress>.number{font-size:12px;text-align:center;white-space:nowrap}
+#lobby>.ready{display:none;width:240px;margin:4px auto 0;text-align:center}
