@@ -56,5 +56,6 @@ io.on('new', function(socket) {
 });
 
 
-// start server on port 8080
-server.listen(8080);
+// start server on port 9001
+server.listen(9001);
+console.log('started');
