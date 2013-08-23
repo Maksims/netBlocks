@@ -13,13 +13,11 @@ Collection of abstractions for rapid network game development in node.js + socke
 
 ### Lib contains:
 
-* **Collection**
+* [**Collection**](docs/collection.md)
   Ensures that collection has only single appearance of specific item. Enables hashing by key (if defined).
-  *Methods*: clear, forEach, get(fnOrKey), has(fnOrItem), pull(fnOrKey), push(item), remove(fnOrItem), toArray([fn])
 
-* **Events**
+* [**Events**](docs/events.md)
   Simple events that can be consistently used between client and server side code.
-  *Methods*: emit(name, [args], [delay]), on(name, fn), once(name, fn), unbind(name, fn)
 
 * **Socket**
   Binds server logic and creates / restores session for sockets, will trigger 'new' event on connection.
@@ -33,10 +31,8 @@ Collection of abstractions for rapid network game development in node.js + socke
   Additionally when inherited list of fields should be defined, that will create accessors and register fields in list of properties for sync.
   *Methods*: data(), delta(rev).
 
-* **User**
+* [**User**](docs/user.md)
   Simple user with socket and timeout (if socket is disconnected and not restored in time).
-  *Methods*: send(name, [data])
 
-* **Lobby**
+* [**Lobby**](docs/lobby.md)
   Lobby that has capacity and will trigger 'ready' event when it is full and bypass list of users.
-  *Methods*: join(user), leave(user)
